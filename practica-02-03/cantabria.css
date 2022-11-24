@@ -1,0 +1,148 @@
+/*Todas las etiquetas <h3> que tengan el atributo title.*/
+h3[title]{
+    font-family: 'Arial';
+    color: #948B0E;
+}
+/*Todas las etiquetas que tengan el atributo class con el valor historia.*/
+[class="historia"]{
+    font-family: 'Century';
+    color: #CBE68D;
+    font-size: 9px;
+}
+/*Todas las etiquetas con el atributo class que entre sus valores tenga el valor cantabra.*/
+[class~="cantabra"]{
+    font-family: 'Corbel';
+    color: #54B3B6;
+    font-size: 10px;
+}
+/*Todas las etiquetas con el atributo title que comienza con la cadena Cantabra.*/
+[title^="Cantabra"]{
+
+    font-family: 'Georgia';
+    color: #751A7C;
+    font-size: 11px;
+}
+/*Todas las etiquetas con el atributo title que termina con la cadena loco.*/
+[title$="loco"]{
+
+    font-family: 'Latha';
+    color: #273CDD;
+    font-size: 12px;
+}
+/*Todas las etiquetas con el atributo title que contengan la cadena conquista.*/
+[title*="conquista"]{
+
+    font-family: 'Calibri';
+    color: #910D1F;
+    font-size: 8px;
+}
+/*Haz que la primera letra de la clase reconquista.*/
+[class="reconquista"]::first-letter{
+
+    font-size: xxx-large;
+    color: #D5D21B;
+}
+/*Haz que la primera fila de la clase cantabria.*/
+[class="cantabria"]::first-line{
+
+    color: #D5D21B;
+}
+
+@media (min-width: 450px) and (max-width: 800px) {
+
+    h3[title]{
+        font-family: 'Arial';
+        color: #948B0E;
+    }
+
+    [class="historia"]{
+        font-family: 'Century';
+        color: #CBE68D;
+        font-size: 10px;
+    }
+    
+    [class~="cantabra"]{
+        font-family: 'Corbel';
+        color: #54B3B6;
+        font-size: 11px;
+    }
+    
+    [title^="Cantabra"]{
+    
+        font-family: 'Georgia';
+        color: #751A7C;
+        font-size: 12px;
+    }
+    
+    [title$="loco"]{
+    
+        font-family: 'Latha';
+        color: #273CDD;
+        font-size: 12px;
+    }
+    
+    [title*="conquista"]{
+    
+        font-family: 'Calibri';
+        color: #910D1F;
+        font-size: 10px;
+    }
+
+    [class="reconquista"]::first-letter{
+
+        font-size: xxx-large;
+        color: #D5D21B;
+    }
+
+    [class="cantabria"]::first-line{
+
+        color: #D5D21B;
+    }
+}
+
+@media (min-width: 900px){
+
+    [class="historia"]{
+        font-family: 'Century';
+        color: #CBE68D;
+        font-size: 11px;
+    }
+    
+    [class~="cantabra"]{
+        font-family: 'Corbel';
+        color: #54B3B6;
+        font-size: 12px;
+    }
+    
+    [title^="Cantabra"]{
+    
+        font-family: 'Georgia';
+        color: #751A7C;
+        font-size: 13px;
+    }
+    
+    [title$="loco"]{
+    
+        font-family: 'Latha';
+        color: #273CDD;
+        font-size: 13px;
+    }
+    
+    [title*="conquista"]{
+    
+        font-family: 'Calibri';
+        color: #910D1F;
+        font-size: 12px;
+    }
+
+    [class="reconquista"]::first-letter{
+
+        font-size: xxx-large;
+        color: #D5D21B;
+    }
+
+    [class="cantabria"]::first-line{
+
+        color: #D5D21B;
+    }
+}

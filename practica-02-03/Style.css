@@ -1,0 +1,127 @@
+/*Se refiere a las etiquetas p que esten dentro del div historia
+    <div id=cuerpo>
+        <p>
+        </p>
+    </div>
+*/
+
+#historia  p {
+    color: red;
+    font-size: 9px;
+    font-family:'Times New Roman';
+}
+/* Se refiere (creo) a los span que estan dentro de un div, y este div esta dentro del div=cuerpo
+<div id=cuerpo>
+    <div>
+        <span>
+        </span>
+    </div>
+</div>
+*/
+#cuerpo div span {
+    color: blue;
+    font-family:'Comic Sans MS';
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 10px;
+
+}
+/*Se refiere a div que esten junto despues de un h3
+    <h3>
+    </h3>
+    <div>
+    </div>
+    <div>
+    </div>
+*/
+h3 > div + div {
+    font-family: 'Tahoma';
+    text-transform: uppercase;
+    font-size: 10px;
+    color: green;
+}
+
+#historia ol {
+
+    color: #1C5C25;
+}
+
+li {
+
+    color: #520909;
+}
+
+@media (min-width: 400px) and (max-width: 800px) {
+
+    #historia p {
+        color: green;
+        font-size: 11px;
+        font-family:'Times New Roman';
+    }
+
+    #cuerpo div span {
+        color: red;
+        font-family:'Comic Sans MS';
+        font-style: italic;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 11px;
+
+    }
+
+    h3 > div + div {
+        font-family: 'Tahoma';
+        text-transform: uppercase;
+        font-size: 12px;
+        color: red;
+    }
+
+    #historia ol li {
+
+        color: '#1C5C25';
+    }
+
+    li {
+
+        color: #520909;
+    }
+    
+}
+
+@media (min-width: 800px){
+
+    #historia p {
+        color: blue;
+        font-size: 13px;
+        font-family:'Times New Roman';
+    }
+
+    #cuerpo div span {
+        color: green;
+        font-family:'Comic Sans MS';
+        font-style: italic;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 12px;
+
+    }
+
+    h3 > div + div {
+        font-family: 'Tahoma';
+        text-transform: uppercase;
+        font-size: 14px;
+        color: blue;
+    }
+
+    #historia ol li{
+
+        color: #1C5C25;
+    }
+
+    li {
+
+        color: #520909;
+    }
+    
+}

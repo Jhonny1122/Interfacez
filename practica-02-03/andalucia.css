@@ -1,0 +1,94 @@
+/*Los párrafos <p> que sean descendientes del identificador historia*/
+#historia p {
+
+    font-family: 'Times New Roman';
+    font-size: 9px;
+    color: red;
+
+}
+/*Los párrafos <span> que sean nietos o más descendientes de etiquetas <div> que son a su vez descendientes del párrafo div con identificador cuerpo*/
+div#cuerpo div * span{
+
+    font-family:'Comic Sans MS,';
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 10px;
+    color: blue;
+}
+/*Los párrafos <div> que sean hermanos inmediatos de <h3>*/
+h3 + div {
+
+    font-family: 'Tahoma';
+    text-transform: uppercase;
+    font-size: 10px;
+    color: green;
+}
+
+@media (min-width: 400px) and (max-width: 800px) {
+
+    #historia p {
+
+        font-family: 'Times New Roman';
+        font-size: 11px;
+        color: green;
+    
+    }
+    
+    div#cuerpo div * span{
+    
+        font-family: 'Comic Sans MS';
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: underline;
+        font-size: 11px;
+        color: red;
+    }
+    
+    h3 + div {
+    
+        font-family: 'Tahoma';
+        text-transform: uppercase;
+        font-size: 12px;
+        color: red;
+    }
+}
+
+@media (min-width: 800px){
+
+    #historia p {
+
+        font-family: 'Times New Roman';
+        font-size: 13px;
+        color: blue;
+    
+    }
+    
+    div#cuerpo div * span{
+    
+        font-family: 'Comic Sans MS';
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: underline;
+        font-size: 12px;
+        color: green;
+    }
+    
+    h3 + div {
+    
+        font-family: 'Tahoma';
+        text-transform: uppercase;
+        font-size: 14px;
+        color: blue;
+    }
+}
+
+/*Todos <li> que sean hijos de un <ol> y que sean descendiente del identificador historia*/
+#historia ol li {
+
+    color: #1C5C25;
+}
+/*Todos <li> que están en el fichero*/
+li{
+    color: #520909;
+}
