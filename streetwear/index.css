@@ -1,0 +1,29 @@
+body{
+    background-color: black;
+    /*background-image: url("../../media/examples/lizard.png");*/
+}
+
+h1{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 75px;
+    text-align: center;
+}
+
+.caja1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #000000;
+    
+  }
+.item1 {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 30px;
+    text-align: center;
+ }
